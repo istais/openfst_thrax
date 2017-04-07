@@ -30,3 +30,12 @@ or build your own
 ```
 docker build -t openfst_thrax .
 ```
+
+## Sample usage
+```
+$ docker run openfst_thrax 
+spawn thraxrewrite-tester --far=example.far --rules=TOKENIZER
+Input string: Mr. Ernest Worthing, B. 4, The Albany. 
+Output string: Mr. Ernest Worthing , B. four , The Albany .
+
+```
